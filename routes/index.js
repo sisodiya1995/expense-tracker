@@ -13,7 +13,7 @@ router.get('/auth/github',
   passport.authenticate('github'));
 
 
-  router.get('/auth/github/callback', 
+  router.get('http://expense-tracker-website.herokuapp.com/auth/github/callback', 
   passport.authenticate('github', { failureRedirect: '/users/login' }),
   function(req, res) {
     // Successful authentication, redirect home.
